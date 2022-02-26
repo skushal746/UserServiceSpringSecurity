@@ -2,6 +2,7 @@ package com.example.userservice.springsecurity.jwt.service.impl;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -20,7 +21,10 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class UserServiceImpl implements UserService {
 
+	@Autowired
 	private UserRepository userRepository;
+	
+	@Autowired
 	private RoleRepository roleRepository;
 	
 	@Override
@@ -35,6 +39,7 @@ public class UserServiceImpl implements UserService {
 		User user = userRepository.findByUserName(userName);
 		Role role = roleRepository.findByName(roleName);
 		user.getRoles().add(role);
+		
 		/*
 		 * Save is not required, due to @Transactional annotation.
 		 */
