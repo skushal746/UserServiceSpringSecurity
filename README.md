@@ -4,7 +4,7 @@ The JWT Tokens are used to access the application and the tokens are refreshed a
 
 This repo contains 
 
-#JWT Structure
+# JWT Structure
 
 THE JWT has header, payload, signature.
 The header typically consists of two parts: the type of the token, which is JWT, and the signing algorithm being used, such as HMAC SHA256 or RSA.
@@ -27,7 +27,7 @@ following link can be used : https://jwt.io/#debugger-io
 
 In authentication, when the user successfully logs in using their credentials, a JSON Web Token will be returned. Since tokens are credentials, great care must be taken to prevent security issues. In general, you should not keep tokens longer than required.
 
-#Benefits of JWT
+# Benefits of JWT
 
 Benefits of JSON Web Tokens (JWT) when compared to Simple Web Tokens (SWT) and Security Assertion Markup Language Tokens (SAML) are as follows:
 
