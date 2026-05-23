@@ -26,13 +26,3 @@ following link can be used : https://jwt.io/#debugger-io
 
 
 In authentication, when the user successfully logs in using their credentials, a JSON Web Token will be returned. Since tokens are credentials, great care must be taken to prevent security issues. In general, you should not keep tokens longer than required.
-
-# Benefits of JWT
-
-Benefits of JSON Web Tokens (JWT) when compared to Simple Web Tokens (SWT) and Security Assertion Markup Language Tokens (SAML) are as follows:
-
-
-
-To view a live demo, [click here](https://github.com/skushal746/UserServiceSpringSecurity).
-
-Future Improvements:
